@@ -16,15 +16,9 @@
     // D1数据库绑定
     "d1_databases": [
         {
-            "binding": "DB",
-            "database_name": "navigation-db-local",
-            "database_id": "0c625319-8c55-49e6-8138-fc77ff366f28"
+            "binding": "DB"
+            ,"database_name": "navigation-db-local"
+            //,"database_id": "0c625319-8c55-49e6-8138-fc77ff366f28"
         }
-    ],
-    "vars": {
-        "AUTH_ENABLED": "true",
-        "AUTH_USERNAME": "linuxdo",
-        "AUTH_PASSWORD": "linuxdo",
-        "AUTH_SECRET": "linuxdo"
-    }
+    ]
 }
