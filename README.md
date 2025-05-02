@@ -121,9 +121,10 @@ NaviHive 是一个精美的网站导航管理系统，帮助你整理和管理�
 
 最简单的部署方式是使用一键部署功能：
 1. fork本仓库，修改`wrangler.template.jsonc`为`wrangler.jsonc`
-2. 点击上方的"Deploy to Cloudflare Workers"按钮
-3. 登录您的 Cloudflare 账号
-4. 在部署界面上，您需要配置以下内容：
+2. 删除wrangler.jsonc中环境变量的设置，要不然创建的程序不会使用部署界面设置的环境变量。
+3. 点击上方的"Deploy to Cloudflare Workers"按钮
+4. 登录您的 Cloudflare 账号
+5. 在部署界面上，您需要配置以下内容：
     - **项目名称**：为您的导航站项目取个名字
     - **D1 数据库**：点击"创建新数据库"，命名为`navigation-db`
     - **环境变量**：
@@ -131,7 +132,7 @@ NaviHive 是一个精美的网站导航管理系统，帮助你整理和管理�
         - `AUTH_USERNAME`：管理员用户名
         - `AUTH_PASSWORD`：管理员密码
         - `AUTH_SECRET`：JWT 密钥（使用随机字符串）
-5. 点击"部署"按钮
+6. 点击"部署"按钮
 
 部署完成后，您将获得一个类似`https://your-project-name.username.workers.dev`的网址，这就是您的导航站地址。
 
